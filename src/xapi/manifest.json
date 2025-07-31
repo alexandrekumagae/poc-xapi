@@ -1,0 +1,101 @@
+{
+  "id": "http://exemplo.com/comunicacao-efetiva",
+  "type": "Course",
+  "name": {
+    "pt-BR": "Comunicação Efetiva no Ambiente de Trabalho"
+  },
+  "description": {
+    "pt-BR": "Curso completo sobre comunicação efetiva no ambiente corporativo usando xAPI"
+  },
+  "version": "1.0.0",
+  "language": "pt-BR",
+  "duration": "PT30M",
+  "difficulty": "beginner",
+  "tags": ["comunicação", "trabalho", "soft-skills", "corporativo"],
+  "learningObjectives": [
+    "Entender a importância da comunicação efetiva",
+    "Identificar diferentes tipos de comunicação",
+    "Reconhecer barreiras da comunicação",
+    "Aplicar estratégias de comunicação efetiva"
+  ],
+  "structure": {
+    "lessons": [
+      {
+        "id": "http://exemplo.com/comunicacao-efetiva/lesson/1",
+        "name": "Introdução à Comunicação Efetiva",
+        "type": "lesson",
+        "duration": "PT8M",
+        "activities": [
+          {
+            "id": "http://exemplo.com/comunicacao-efetiva/reflection/1",
+            "type": "reflection",
+            "name": "Reflexão sobre experiências de comunicação"
+          }
+        ]
+      },
+      {
+        "id": "http://exemplo.com/comunicacao-efetiva/lesson/2",
+        "name": "Tipos de Comunicação no Ambiente Corporativo",
+        "type": "lesson",
+        "duration": "PT7M",
+        "activities": [
+          {
+            "id": "http://exemplo.com/comunicacao-efetiva/question/1",
+            "type": "quiz",
+            "name": "Quiz sobre tipos de comunicação"
+          }
+        ]
+      },
+      {
+        "id": "http://exemplo.com/comunicacao-efetiva/lesson/3",
+        "name": "Barreiras da Comunicação e Como Superá-las",
+        "type": "lesson",
+        "duration": "PT8M",
+        "activities": [
+          {
+            "id": "http://exemplo.com/comunicacao-efetiva/scenario/1",
+            "type": "scenario",
+            "name": "Cenário prático de comunicação"
+          }
+        ]
+      },
+      {
+        "id": "http://exemplo.com/comunicacao-efetiva/lesson/4",
+        "name": "Avaliação Final",
+        "type": "assessment",
+        "duration": "PT7M",
+        "activities": [
+          {
+            "id": "http://exemplo.com/comunicacao-efetiva/assessment",
+            "type": "assessment",
+            "name": "Avaliação final do curso"
+          }
+        ]
+      }
+    ]
+  },
+  "xapi": {
+    "endpoint": "https://lrs.example.com/xapi/",
+    "version": "1.0.3",
+    "verbs": [
+      "http://adlnet.gov/expapi/verbs/initialized",
+      "http://adlnet.gov/expapi/verbs/accessed",
+      "http://adlnet.gov/expapi/verbs/completed",
+      "http://adlnet.gov/expapi/verbs/answered",
+      "http://adlnet.gov/expapi/verbs/commented"
+    ],
+    "activityTypes": [
+      "http://adlnet.gov/expapi/activities/lesson",
+      "http://adlnet.gov/expapi/activities/question",
+      "http://adlnet.gov/expapi/activities/assessment",
+      "http://adlnet.gov/expapi/activities/scenario"
+    ]
+  },
+  "metadata": {
+    "author": "Equipe de Desenvolvimento",
+    "created": "2024-01-01T00:00:00Z",
+    "updated": "2024-01-01T00:00:00Z",
+    "license": "MIT",
+    "repository": "https://github.com/exemplo/xapi-comunicacao-efetiva"
+  }
+} 

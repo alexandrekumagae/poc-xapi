@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunicação Efetiva no Ambiente de Trabalho - xAPI</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="xapi-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <div class="header-content">
+                <h1>Comunicação Efetiva no Ambiente de Trabalho</h1>
+                <div class="lesson-info">
+                    <span id="current-lesson">Lição 1 de 4</span>
+                    <span id="completion-status">0% Concluído</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="navigation">
+            <button class="nav-btn active" data-lesson="1">Introdução</button>
+            <button class="nav-btn" data-lesson="2">Tipos de Comunicação</button>
+            <button class="nav-btn" data-lesson="3">Barreiras e Soluções</button>
+            <button class="nav-btn" data-lesson="4">Avaliação</button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Lesson 1: Introdução -->
+            <div class="lesson active" id="lesson-1">
+                <div class="lesson-header">
+                    <h2>Introdução à Comunicação Efetiva</h2>
+                    <p class="lesson-description">Entenda a importância da comunicação clara e eficiente no ambiente corporativo.</p>
+                </div>
+                
+                <div class="content-grid">
+                    <div class="content-card">
+                        <div class="card-icon">💬</div>
+                        <h3>Por que a comunicação é fundamental?</h3>
+                        <p>A comunicação efetiva é a base para:</p>
+                        <ul>
+                            <li>Melhor colaboração entre equipes</li>
+                            <li>Redução de conflitos e mal-entendidos</li>
+                            <li>Aumento da produtividade</li>
+                            <li>Fortalecimento da cultura organizacional</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-card">
+                        <div class="card-icon">📊</div>
+                        <h3>Impacto na Produtividade</h3>
+                        <p>Estudos mostram que empresas com comunicação efetiva têm:</p>
+                        <ul>
+                            <li>50% menos conflitos internos</li>
+                            <li>25% maior produtividade</li>
+                            <li>40% maior satisfação dos colaboradores</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="interactive-element">
+                    <h3>Reflexão</h3>
+                    <p>Pense em uma situação recente onde a comunicação não foi efetiva. Quais foram as consequências?</p>
+                    <textarea id="reflection-1" placeholder="Compartilhe sua experiência..."></textarea>
+                </div>
+            </div>
+
+            <!-- Lesson 2: Tipos de Comunicação -->
+            <div class="lesson" id="lesson-2">
+                <div class="lesson-header">
+                    <h2>Tipos de Comunicação no Ambiente Corporativo</h2>
+                    <p class="lesson-description">Conheça os diferentes canais e formas de comunicação utilizados nas empresas.</p>
+                </div>
+
+                <div class="communication-types">
+                    <div class="type-card">
+                        <h3>Comunicação Verbal</h3>
+                        <div class="type-content">
+                            <p><strong>Exemplos:</strong> Reuniões, apresentações, conversas informais</p>
+                            <p><strong>Vantagens:</strong> Feedback imediato, expressão de emoções</p>
+                            <p><strong>Desafios:</strong> Pode ser esquecida, não há registro</p>
+                        </div>
+                    </div>
+
+                    <div class="type-card">
+                        <h3>Comunicação Escrita</h3>
+                        <div class="type-content">
+                            <p><strong>Exemplos:</strong> E-mails, relatórios, documentação</p>
+                            <p><strong>Vantagens:</strong> Registro permanente, pode ser revisada</p>
+                            <p><strong>Desafios:</strong> Pode ser mal interpretada, falta de tom</p>
+                        </div>
+                    </div>
+
+                    <div class="type-card">
+                        <h3>Comunicação Não-Verbal</h3>
+                        <div class="type-content">
+                            <p><strong>Exemplos:</strong> Linguagem corporal, expressões faciais</p>
+                            <p><strong>Vantagens:</strong> Transmite emoções, complementa a verbal</p>
+                            <p><strong>Desafios:</strong> Pode ser ambígua, varia culturalmente</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-section">
+                    <h3>Teste seu conhecimento</h3>
+                    <div class="quiz-question">
+                        <p>Qual tipo de comunicação é mais adequado para transmitir informações complexas que precisam ser revisadas?</p>
+                        <div class="quiz-options">
+                            <label><input type="radio" name="q1" value="verbal"> Verbal</label>
+                            <label><input type="radio" name="q1" value="escrita"> Escrita</label>
+                            <label><input type="radio" name="q1" value="nao-verbal"> Não-verbal</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lesson 3: Barreiras e Soluções -->
+            <div class="lesson" id="lesson-3">
+                <div class="lesson-header">
+                    <h2>Barreiras da Comunicação e Como Superá-las</h2>
+                    <p class="lesson-description">Identifique os obstáculos mais comuns e aprenda estratégias para superá-los.</p>
+                </div>
+
+                <div class="barriers-section">
+                    <div class="barrier-card">
+                        <h3>🚫 Barreiras Comuns</h3>
+                        <ul>
+                            <li>Ruído e distrações</li>
+                            <li>Diferenças culturais</li>
+                            <li>Jargão técnico excessivo</li>
+                            <li>Falta de feedback</li>
+                            <li>Emoções e preconceitos</li>
+                        </ul>
+                    </div>
+
+                    <div class="barrier-card">
+                        <h3>✅ Soluções Práticas</h3>
+                        <ul>
+                            <li>Escolher ambiente adequado</li>
+                            <li>Usar linguagem clara e simples</li>
+                            <li>Solicitar confirmação de entendimento</li>
+                            <li>Praticar escuta ativa</li>
+                            <li>Ser empático e respeitoso</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="scenario-section">
+                    <h3>Cenário Prático</h3>
+                    <div class="scenario-card">
+                        <p><strong>Situação:</strong> Você precisa explicar um novo processo técnico para uma equipe de diferentes áreas da empresa.</p>
+                        <p><strong>Desafio:</strong> Como garantir que todos entendam, mesmo sem conhecimento técnico?</p>
+                        
+                        <div class="scenario-options">
+                            <h4>Escolha a melhor abordagem:</h4>
+                            <label><input type="radio" name="scenario" value="a"> Usar muitos termos técnicos para parecer profissional</label>
+                            <label><input type="radio" name="scenario" value="b"> Adaptar a linguagem para cada público</label>
+                            <label><input type="radio" name="scenario" value="c"> Enviar apenas por e-mail para todos</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lesson 4: Avaliação -->
+            <div class="lesson" id="lesson-4">
+                <div class="lesson-header">
+                    <h2>Avaliação Final</h2>
+                    <p class="lesson-description">Teste seus conhecimentos sobre comunicação efetiva no ambiente de trabalho.</p>
+                </div>
+
+                <div class="assessment-section">
+                    <div class="question-card">
+                        <h3>Questão 1</h3>
+                        <p>Qual é o principal benefício da comunicação efetiva nas empresas?</p>
+                        <div class="options">
+                            <label><input type="radio" name="final-q1" value="a"> Aumentar o número de reuniões</label>
+                            <label><input type="radio" name="final-q1" value="b"> Melhorar a produtividade e reduzir conflitos</label>
+                            <label><input type="radio" name="final-q1" value="c"> Diminuir o uso de e-mails</label>
+                        </div>
+                    </div>
+
+                    <div class="question-card">
+                        <h3>Questão 2</h3>
+                        <p>Quando você está explicando algo complexo, qual é a melhor prática?</p>
+                        <div class="options">
+                            <label><input type="radio" name="final-q2" value="a"> Usar sempre termos técnicos</label>
+                            <label><input type="radio" name="final-q2" value="b"> Adaptar a linguagem ao público</label>
+                            <label><input type="radio" name="final-q2" value="c"> Falar rapidamente para economizar tempo</label>
+                        </div>
+                    </div>
+
+                    <div class="question-card">
+                        <h3>Questão 3</h3>
+                        <p>Qual é uma barreira comum da comunicação?</p>
+                        <div class="options">
+                            <label><input type="radio" name="final-q3" value="a"> Usar linguagem clara</label>
+                            <label><input type="radio" name="final-q3" value="b"> Solicitar feedback</label>
+                            <label><input type="radio" name="final-q3" value="c"> Jargão técnico excessivo</label>
+                        </div>
+                    </div>
+
+                    <button id="submit-assessment" class="btn-primary">Enviar Avaliação</button>
+                </div>
+
+                <div id="results-section" class="results-section" style="display: none;">
+                    <h3>Resultados da Avaliação</h3>
+                    <div id="score-display"></div>
+                    <div id="feedback"></div>
+                    <button id="retry-assessment" class="btn-secondary">Tentar Novamente</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <button id="prev-btn" class="btn-secondary">Anterior</button>
+                <button id="next-btn" class="btn-primary">Próximo</button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="src/js/xapi.js"></script>
+    <script src="src/js/app.js"></script>
+</body>
+</html> 
