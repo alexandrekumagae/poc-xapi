@@ -8,10 +8,6 @@
 
 > **Modern e-learning system** developed with **xAPI (Experience API)** for detailed tracking of learning experiences. Demonstration of scalable architecture and advanced analytics for corporate education.
 
-## 🚀 Demo
-
-**[▶️ Try Application](https://your-username.github.io/poc-xapi/)** | **[📊 Player Simulation](https://your-username.github.io/poc-xapi/docs/xapi-player-simulation.html)**
-
 ## 📋 About the Project
 
 This project demonstrates the **migration from SCORM to xAPI** in a corporate communication course, implementing **granular tracking** and **advanced analytics**. Developed as a proof of concept to modernize e-learning systems.
